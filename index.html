@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balamurugan | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,6 +70,7 @@
     
     <section id="about">
         <h2>About Me</h2>
+        <img src="profile.jpg" alt="Balamurugan" class="profile-img">
         <p>Computer Science Graduate with mid-level problem-solving skills, passionate about software development.</p>
     </section>
     
@@ -40,10 +88,12 @@
         <h2>Projects</h2>
         <div>
             <h3>ATM Security Enhancement</h3>
+            <img src="atm-security.jpg" alt="ATM Security" width="100%">
             <p>Implemented OpenCV-based face recognition and object detection for enhanced security.</p>
         </div>
         <div>
             <h3>Weather Web Page</h3>
+            <img src="weather-app.jpg" alt="Weather App" width="100%">
             <p>Developed a real-time weather web page using HTML, CSS, and JavaScript.</p>
         </div>
     </section>
