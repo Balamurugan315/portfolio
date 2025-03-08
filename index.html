@@ -3,105 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillRack Code Upload</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-        }
-        h2 {
-            text-align: center;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
-        }
-        textarea {
-            width: 100%;
-            height: 100px;
-            padding: 8px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            resize: none;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            background: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #218838;
-        }
-        .output {
-            margin-top: 20px;
-            padding: 10px;
-            background: #e9ecef;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Balamurugan | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>SkillRack Code Upload</h2>
-        <label for="testTitle">Test Title</label>
-        <input type="text" id="testTitle" placeholder="Enter Test Title" required>
-
-        <label for="javaCode">Java Code</label>
-        <textarea id="javaCode" placeholder="Paste Java Code Here"></textarea>
-
-        <label for="pythonCode">Python Code</label>
-        <textarea id="pythonCode" placeholder="Paste Python Code Here"></textarea>
-
-        <button onclick="uploadCode()">Upload Code</button>
-        
-        <div id="uploadedCodes" class="output"></div>
-    </div>
-
-    <script>
-        function uploadCode() {
-            let title = document.getElementById("testTitle").value;
-            let javaCode = document.getElementById("javaCode").value;
-            let pythonCode = document.getElementById("pythonCode").value;
-            
-            if (title.trim() === "" || (javaCode.trim() === "" && pythonCode.trim() === "")) {
-                alert("Please enter a title and at least one code.");
-                return;
-            }
-            
-            let outputDiv = document.getElementById("uploadedCodes");
-            let newEntry = `<div><h3>${title}</h3>`;
-            if (javaCode) {
-                newEntry += `<pre><code>${javaCode}</code></pre>`;
-            }
-            if (pythonCode) {
-                newEntry += `<pre><code>${pythonCode}</code></pre>`;
-            }
-            newEntry += `</div>`;
-            outputDiv.innerHTML += newEntry;
-
-            document.getElementById("testTitle").value = "";
-            document.getElementById("javaCode").value = "";
-            document.getElementById("pythonCode").value = "";
-        }
-    </script>
+    <header>
+        <h1>Balamurugan</h1>
+        <p>Aspiring Software Engineer | Problem Solver</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Computer Science Graduate with mid-level problem-solving skills, passionate about software development.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python (Intermediate), Java (Intermediate)</li>
+            <li>HTML, CSS, JavaScript, React (Basic)</li>
+            <li>Git, VS Code, Node.js (Beginner)</li>
+            <li>DSA, Problem-solving, Teamwork</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>ATM Security Enhancement</h3>
+            <p>Implemented OpenCV-based face recognition and object detection for enhanced security.</p>
+        </div>
+        <div>
+            <h3>Weather Web Page</h3>
+            <p>Developed a real-time weather web page using HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+    
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Led a College Live-in-Lab Project</li>
+            <li>Solved 250+ problems on LeetCode</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:balamurugan03012005@gmail.com">balamurugan03012005@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bala-murugan-b60186256/" target="_blank">Balamurugan</a></p>
+        <p>GitHub: <a href="https://github.com/Balamurugan315" target="_blank">Balamurugan315</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Balamurugan. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
